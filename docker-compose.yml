@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
+      - ./data:/app/data
+      - ./tests:/app/tests
+    environment:
+      - FLASK_ENV=${FLASK_ENV:-development}  # Ambiente Flask, padrão é 'development'
+      - DATABASE_URL=${DATABASE_URL:-sqlite:///data/database.db} # URL do banco de dados
+      - CSV_PATH=/app/data/movielist.csv     # Caminho para o arquivo CSV
+    command: ["python", "app.py"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/app/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

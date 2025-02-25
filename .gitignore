@@ -1,0 +1,33 @@
+# Diretórios de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambiente virtual
+venv/
+.venv/
+
+# Configurações de IDEs
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos CSV e logs
+# Verifique se deseja ignorar TODOS os CSVs antes de manter esta linha.
+*.log
+temp_*.csv
+
+# Arquivos gerados por ferramentas comuns
+*.egg-info/
+dist/
+build/
+
+# Outros
+.env
+.git/
