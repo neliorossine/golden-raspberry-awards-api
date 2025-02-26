@@ -5,8 +5,7 @@
 <br><br>
 
 ## Descrição
-Esta API calcula os intervalos entre prêmios consecutivos para produtores da categoria "Pior Filme" do Golden Raspberry Awards. Em seu método principal, ela retorna os produtores com o menor e o maior intervalo entre vitórias.
-Contém outros métodos também, inclusive com IA.
+Esta API foi desenvolvida para analisar os prêmios da categoria "Pior Filme" do Golden Raspberry Awards, destacando os intervalos entre vitórias consecutivas de produtores. Seu principal objetivo é identificar e retornar os produtores com os menores e maiores intervalos entre prêmios. Além disso, a API oferece funcionalidades adicionais, incluindo recursos baseados em inteligência artificial para previsão e recomendações personalizadas.
 <br>
 <br>
 <br>
