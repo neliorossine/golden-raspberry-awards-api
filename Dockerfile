@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copia apenas o arquivo de dependências para otimizar o cache
-COPY  requirements.txt requirements.txt
+COPY requirements.txt requirements.txt
 
 # Instala as dependências Python
 RUN pip install --no-cache-dir -r requirements.txt
