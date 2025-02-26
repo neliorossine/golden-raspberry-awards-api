@@ -15,7 +15,7 @@ ___
 
 ## Pré-requisitos
 - Docker
-- Docker Compose.
+- Docker Compose
 
 <br>
 
