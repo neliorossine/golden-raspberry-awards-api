@@ -25,6 +25,32 @@ ___
 ___
 
 
+## Tecnologias Utilizadas
+
+<br>
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
+
+- Python: Linguagem principal utilizada para a construção da API.
+- Flask: Framework para desenvolvimento de aplicações web.
+- Pandas: Biblioteca para manipulação e análise de dados, utilizada para processar o dataset de filmes.
+- Scikit-learn: Utilizado para implementar funcionalidades de IA, como previsão e agrupamento de filmes.
+- Docker: Para containerização da aplicação e garantir um ambiente de execução consistente.
+- Docker Compose: Para orquestração de múltiplos containers, incluindo banco de dados.
+- SQLite: Banco de dados leve utilizado para persistência de dados.
+- Pytest: Ferramenta de testes automatizados para garantir a qualidade e funcionamento correto da aplicação.
+- Make: Automação de comandos frequentes, como iniciar e testar a aplicação.
+- HATEOAS: Implementado nos endpoints para enriquecer as respostas com links úteis e navegáveis.
+
+
+<br>
+
+<br>
+
+___
+
+
+
 ## Como executar
 
 <br>
@@ -56,6 +82,19 @@ ___
 
 <br>
 <br>
+
+___
+
+## Limpar o ambiente
+<br>
+
+- Para parar os containers e remover volumes:
+
+    ```bash
+    make clean
+
+<br>
+
 
 ___
 
@@ -130,18 +169,6 @@ Esses testes garantem que a API e os serviços funcionem corretamente, cobrindo 
 
 ___
 
-## Limpar o ambiente
-<br>
-
-- Para parar os containers e remover volumes:
-
-    ```bash
-    make clean
-
-<br>
-
-
-___
 
 ## Estrutura do Projeto
 O projeto segue a seguinte estrutura de diretórios:
