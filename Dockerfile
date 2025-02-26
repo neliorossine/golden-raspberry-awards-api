@@ -15,21 +15,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Cria um usuário não root para rodar a aplicação
-RUN useradd --create-home appuser
-USER appuser
-
 # Copia apenas o arquivo de dependências para otimizar o cache
-COPY --chown=appuser:appuser requirements.txt requirements.txt
+COPY  requirements.txt requirements.txt
 
 # Instala as dependências Python
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia o código-fonte da aplicação
-COPY --chown=appuser:appuser app/ /app
+COPY app/ /app
 
 # Copia o diretório `data` contendo o CSV
-COPY --chown=appuser:appuser data/ /app/data
+COPY data/ /app/data
 
 # Exclui caches de compilação para reduzir o tamanho da imagem
 RUN rm -rf ~/.cache/pip
