@@ -87,15 +87,42 @@ ___
 ## Limpar o ambiente
 <br>
 
-- Para parar os containers e remover volumes:
+Para parar os containers e remover volumes:
 
-    ```bash
+   ```bash
     make clean
+   ```
+
 
 <br>
 
 
 ___
+
+
+<br>
+
+## Criar e ativar o ambiente virtual:
+
+Se você preferir usar um ambiente virtual, pode criar um com venv. Aqui estão os passos:
+
+<br>
+
+Para Linux/macOS:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+<br>
+
+Para Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+<br>
 
 
 ## Testes
