@@ -1,6 +1,8 @@
 # Golden Raspberry Awards API
 
-<br>
+<p align="center"><img src="https://www.lacosacine.com/wp-content/uploads/2023/01/Razzie-Awards.jpg"></p>
+
+<br><br>
 
 ## Descrição
 Esta API calcula os intervalos entre prêmios consecutivos para produtores da categoria "Pior Filme" do Golden Raspberry Awards. Em seu método principal, ela retorna os produtores com o menor e o maior intervalo entre vitórias.
