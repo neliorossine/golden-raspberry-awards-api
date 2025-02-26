@@ -1,11 +1,16 @@
 # Golden Raspberry Awards API
 
+<br>
+
 ## Descrição
 Esta API calcula os intervalos entre prêmios consecutivos para produtores da categoria "Pior Filme" do Golden Raspberry Awards. Em seu método principal, ela retorna os produtores com o menor e o maior intervalo entre vitórias.
 Contém outros métodos também, inclusive com IA.
 <br>
+<br>
+<br>
 
 ___
+
 
 ## Pré-requisitos
 - Docker
@@ -13,10 +18,17 @@ ___
 
 <br>
 
+<br>
+
 ___
 
+
 ## Como executar
+
+<br>
+
 1. Clone o repositório:
+
    ```bash
    git clone <seu-repositorio>
    cd <seu-repositorio>
@@ -32,6 +44,7 @@ ___
 
 3. Para iniciar o ambiente com banco de dados em memória 
 (Todos os dados são apagados ao parar o ambiente) :
+
    ```bash
    make run-memory
 
@@ -40,11 +53,17 @@ ___
 4. Acesse a API e sua documentação no endereço http://localhost:5000/
 
 <br>
+<br>
 
 ___
 
+
 ## Testes
+
+<br>
+
 - Para executar os testes automatizados, use o comando:
+
     ```bash
     make test
 
@@ -105,11 +124,15 @@ Esses testes garantem que a API e os serviços funcionem corretamente, cobrindo 
 
 
 <br>
+<br>
 
 ___
 
 ## Limpar o ambiente
+<br>
+
 - Para parar os containers e remover volumes:
+
     ```bash
     make clean
 
@@ -147,6 +170,7 @@ O projeto segue a seguinte estrutura de diretórios:
 └── README.md                   # Documentação do projeto
 ```
 <br>
+<br>
 
 ___
 
@@ -154,6 +178,8 @@ ___
 ## Endpoints da API
 
 A API possui os seguintes endpoints:
+
+<br>
 
 ### `GET /app/awards`
 Retorna os produtores com:
