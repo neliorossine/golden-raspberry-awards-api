@@ -266,8 +266,8 @@ Retorna os produtores com:
 }
 ```
 <br>
-
-___
+<br>
+<br>
 
 ### `GET /app/details`
 Retorna o mesmo conteúdo do endpoint /app/awards, mas com links HATEOAS para mais informações sobre os produtores e filmes relacionados.
@@ -311,8 +311,9 @@ Retorna o mesmo conteúdo do endpoint /app/awards, mas com links HATEOAS para ma
 ```
 
 <br>
-
-___
+<br>
+<br>
+<br>
 
 ### `GET /app/producers/<producer>`
 Retorna informações detalhadas sobre um produtor específico e a lista de seus filmes vencedores.
@@ -342,8 +343,9 @@ Parâmetros:
 
 
 <br>
-
-___
+<br>
+<br>
+<br>
 
 ### `GET /app/movies`
 Retorna uma lista de todos os filmes registrados no banco de dados. Permite filtros opcionais.
@@ -376,8 +378,9 @@ Parâmetros Opcionais:
 ]
 ```
 <br>
-
-___
+<br>
+<br>
+<br>
 
 ### `POST /app/winners`
 Retorna os filmes vencedores de um determinado ano.
@@ -407,9 +410,9 @@ Parâmetros:
 ```
 
 <br>
-
-___
-
+<br>
+<br>
+<br>
 
 
 
@@ -444,8 +447,9 @@ Retorna uma recomendação de filmes com base em padrões de premiações, agrup
 
 
 <br>
-
-___
+<br>
+<br>
+<br>
 
 ### `POST /ai/predict-bad-movie`
 Retorna uma previsão sobre a probabilidade de um filme ser considerado "ruim", com base nas características do produtor e estúdio. A previsão é gerada com base em dados históricos sobre o sucesso (ou fracasso) de filmes anteriores produzidos pelos mesmos produtores e estúdios.
