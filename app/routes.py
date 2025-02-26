@@ -44,7 +44,7 @@ def init_db(database_uri):
     # População dos dados
     session = Session()
     try:
-        populate_data(session)  # Chama a função de população de dados
+        populate_data(session)  # Chama a função para popular os dados
         logger.info("Dados populados com sucesso!")
     except Exception as e:
         logger.error(f"Erro ao popular dados: {e}")
